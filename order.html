@@ -1,0 +1,114 @@
+# the ordering page 
+
+<!DOCTYPE html>
+<head>
+    <link rel="icon" type="image/jpg" href="new JB icon edited.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Order Now - JB Elegant Men's Clothing</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="new_JB_icon_edited-removebg-preview.png" alt="JB Logo" width="80">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="order.html" class="active">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Select Products</legend>
+                <div class="product-selection">
+                    <div class="product-item">
+                        <input type="checkbox" id="suit" name="products" value="suit">
+                        <label for="suit">Classic Suit - $299.99</label>
+                        <input type="number" name="quantity_suit" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="shirt" name="products" value="shirt">
+                        <label for="shirt">Formal Shirt - $89.99</label>
+                        <input type="number" name="quantity_shirt" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="pants" name="products" value="pants">
+                        <label for="pants">Dress Pants - $129.99</label>
+                        <input type="number" name="quantity_pants" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="tie" name="products" value="tie">
+                        <label for="tie">A Silk Tie - $49.99</label>
+                        <input type="number" name="quantity_tie" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="blazer" name="products" value="blazer">
+                        <label for="blazer">Blazer Jacket - $199.99</label>
+                        <input type="number" name="quantity_blazer" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="shoes" name="products" value="shoes">
+                        <label for="shoes">Leather Shoes - $149.99</label>
+                        <input type="number" name="quantity_shoes" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="belt" name="products" value="belt">
+                        <label for="belt">Leather Belt - $39.99</label>
+                        <input type="number" name="quantity_belt" min="0" placeholder="Quantity">
+                    </div>
+                    <div class="product-item">
+                        <input type="checkbox" id="hat" name="products" value="hat">
+                        <label for="hat">Fedora Hat - $79.99</label>
+                        <input type="number" name="quantity_hat" min="0" placeholder="Quantity">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Method</legend>
+                <div class="payment-method">
+                    <input type="radio" id="credit_card" name="payment" value="credit_card">
+                    <label for="credit_card">Credit Card</label><br>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label><br>
+                    <input type="radio" id="cash_on_delivery" name="payment" value="cash_on_delivery">
+                    <label for="cash_on_delivery">Cash on Delivery</label>
+                </div>
+                <div class="payment-details">
+                    <label for="card_number">Credit Card Number (if Credit Card selected):</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="Enter card number"><br>
+                    <label for="paypal_account">PayPal Account Name (if PayPal selected):</label>
+                    <input type="text" id="paypal_account" name="paypal_account" placeholder="Enter PayPal account name">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Buyer Information</legend>
+                <div class="buyer-info">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JB Clothing. All rights reserved.</p>
+    </footer>
+</body>
+</html>
